@@ -57,10 +57,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
                   decoration: BoxDecoration(
                     color: _getColorFromHex(_selectedColor),
                     shape: BoxShape.circle,
-                    border: Border.all(
-                      color: Colors.grey[400]!,
-                      width: 2,
-                    ),
+                    border: Border.all(color: Colors.grey[400]!, width: 2),
                   ),
                   child: const Icon(
                     Icons.palette,
@@ -102,16 +99,10 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
                               hintStyle: Theme.of(context)
                                   .textTheme
                                   .headlineSmall
-                                  ?.copyWith(
-                                    color: Colors.grey[500],
-                                  ),
+                                  ?.copyWith(color: Colors.grey[500]),
                             ),
-                            style: Theme.of(context)
-                                .textTheme
-                                .headlineSmall
-                                ?.copyWith(
-                                  fontWeight: FontWeight.w600,
-                                ),
+                            style: Theme.of(context).textTheme.headlineSmall
+                                ?.copyWith(fontWeight: FontWeight.w600),
                             maxLines: null,
                           ),
                           // Divider
@@ -126,12 +117,8 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
                             decoration: InputDecoration(
                               hintText: 'Start typing...',
                               border: InputBorder.none,
-                              hintStyle: Theme.of(context)
-                                  .textTheme
-                                  .bodyMedium
-                                  ?.copyWith(
-                                    color: Colors.grey[500],
-                                  ),
+                              hintStyle: Theme.of(context).textTheme.bodyMedium
+                                  ?.copyWith(color: Colors.grey[500]),
                             ),
                             style: Theme.of(context).textTheme.bodyMedium,
                             maxLines: null,
